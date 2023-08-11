@@ -8,8 +8,6 @@ const service = axios.create({
 // Request interceptors
 service.interceptors.request.use(
   (config) => {
-    config.headers.token = 'wangkt';
-
     return { ...config };
   },
   (error) => {

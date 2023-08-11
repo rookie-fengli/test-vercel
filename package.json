@@ -6,7 +6,7 @@
     "dev-node": "cross-env ENV=dev node server.js ",
     "dev-server": "cross-env ENV=dev-server PORT=1000 next dev --turbo",
     "dev-local": "cross-env ENV=dev-local PORT=1000 next dev --turbo",
-    "build": "cross-env ENV=build next build",
+    "build": "cross-env ENV=build next build --debug",
     "start": "cross-env ENV=pro PORT=1000 next start",
     "lint": "cross-env ENV=lint next lint",
     "export": "cross-env ENV=export next build && next export"
